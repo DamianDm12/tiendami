@@ -235,9 +235,9 @@ function renderProductos(filtro) {
 
         card.innerHTML = `
             <img 
-                src="imagenes/${prod.nombreImagen}.${prod.extension}" 
+                src="${prod.nombreImagen}.${prod.extension}" 
                 alt="${prod.nombre}" 
-                onerror="this.src='imagenes/placeholder.jpg';"
+                onerror="this.src='placeholder.jpg';"
                 onclick="abrirModalProducto('${safeNombre}', '${safeImgName}', '${prod.extension}')"
             >
             <h3>${prod.nombre}</h3>
@@ -278,7 +278,7 @@ function agregarAlCarrito(nombre, imgName, ext) {
     }
 
     actualizarCarrito();
-    document.getElementById('img-producto-agregado').src = `imagenes/${imgName}.${ext}`;
+    document.getElementById('img-producto-agregado').src = `${imgName}.${ext}`;
     document.getElementById('confirmacion-modal').style.display = 'block';
 }
 
@@ -322,10 +322,10 @@ function actualizarCarrito() {
             li.innerHTML = `
                 <div class="cart-item-info">
                     <img 
-                        src="imagenes/${item.imgName}.${item.ext}" 
+                        src="${item.imgName}.${item.ext}" 
                         alt="${item.nombre}" 
                         class="cart-thumbnail"
-                        onerror="this.src='imagenes/placeholder.jpg';"
+                        onerror="this.src='placeholder.jpg';"
                     >
                     <span class="cart-item-name">${item.nombre}</span>
                 </div>
