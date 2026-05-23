@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Rosita - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tienda Rosita</h1>
+
+        <div class="cart-container">
+
+            <button id="cart-btn">
+                🛒 Carrito (<span id="cart-count">0</span>)
+            </button>
+
+            <div id="cart-dropdown" class="hidden">
+
+                <ul id="cart-items"></ul>
+
+                <div id="cart-total-container" style="
+                    text-align:right;
+                    font-weight:bold;
+                    padding:10px 0;
+                    color:#333;
+                    display:none;
+                ">
+                    Total: $<span id="cart-total-price">0</span>
+                </div>
+
+                <button id="checkout-btn">
+                    Enviar pedido por WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                ✨ Descubre las mejores fragancias ✨
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+
+        <p>
+            ⚠️ Las imágenes son ilustrativas.
+            El producto se entrega en caja genérica.
+
+            <button
+                onclick="document.getElementById('caja-modal').style.display='block'"
+                style="
+                    background:none;
+                    border:none;
+                    color:#d9534f;
+                    text-decoration:underline;
+                    cursor:pointer;
+                    font-weight:bold;
+                "
+            >
+                Ver ejemplo
+            </button>
+
+        </p>
+
+    </section>
+
+    <section class="filters">
+
+        <button class="filter-btn active" data-filter="Todos">
+            Todos
+        </button>
+
+        <button class="filter-btn" data-filter="Femenino">
+            Mujer
+        </button>
+
+        <button class="filter-btn" data-filter="Masculino">
+            Hombre
+        </button>
+
+        <button class="filter-btn" data-filter="Unisex">
+            Unisex
+        </button>
+
+    </section>
+
+    <main id="product-grid" class="grid"></main>
+
+    <!-- MODAL CONFIRMACION -->
+
+    <div id="confirmacion-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close-btn"
+                onclick="this.parentElement.parentElement.style.display='none'"
+            >
+                &times;
+            </span>
+
+            <h3>¡Agregado al carrito!</h3>
+
+            <img
+                id="img-producto-agregado"
+                src=""
+                style="
+                    width:100px;
+                    border-radius:8px;
+                    margin:10px 0;
+                "
+            >
+
+            <p>
+                Se entrega en caja genérica.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL PRODUCTO -->
+
+    <div id="caja-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close-btn"
+                onclick="this.parentElement.parentElement.style.display='none'"
+            >
+                &times;
+            </span>
+
+            <h3>Información del Producto</h3>
+
+            <p style="
+                font-size:14px;
+                color:#555;
+                margin:10px 0;
+                line-height:1.4;
+            ">
+                ⚠️ <strong>Nota importante:</strong>
+                Las imágenes de los perfumes son de carácter meramente ilustrativo.
+                Todos nuestros productos se entregan en su correspondiente
+                presentación de caja genérica.
+            </p>
+
+            <img
+                src="imagenes/cajagenerica.jpeg"
+                alt="Caja Genérica"
+                style="
+                    width:100%;
+                    max-height:40vh;
+                    object-fit:contain;
+                    border-radius:8px;
+                    margin-top:10px;
+                "
+            >
+
+            <p id="modal-producto-nombre" style="
+                font-size:20px;
+                font-weight:bold;
+                margin-top:15px;
+                color:#333;
+            ">
+            </p>
+
+            <p style="
+                font-size:2rem;
+                font-weight:bold;
+                color:#ff9aab;
+                margin:10px 0 20px;
+            ">
+                $22.000
+            </p>
+
+            <button
+                id="modal-add-btn"
+                class="add-btn"
+            >
+                Agregar al carrito
+            </button>
+
+        </div>
+
+    </div>
+
+   <!-- WHATSAPP -->
+
+<a
+    href="https://wa.me/5491160375700"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="WhatsApp"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+        <path d="M19.11 17.21c-.29-.14-1.69-.83-1.95-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.11-.17.19-.33.21-.62.07-.29-.14-1.2-.44-2.29-1.4-.85-.76-1.43-1.69-1.59-1.97-.17-.29-.02-.44.12-.58.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.96 2.45.05 1.45 1.03 2.84 1.18 3.03.14.19 2.03 3.1 5.02 4.23.71.31 1.27.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+        <path d="M16.01 3C8.83 3 3 8.82 3 16c0 2.52.74 4.98 2.13 7.09L3 29l6.08-2.06A12.94 12.94 0 0 0 16.01 29C23.18 29 29 23.18 29 16S23.18 3 16.01 3zm0 23.67c-2.09 0-4.13-.56-5.91-1.63l-.42-.25-3.61 1.22 1.18-3.52-.27-.45A10.6 10.6 0 0 1 5.33 16c0-5.89 4.79-10.68 10.68-10.68 2.85 0 5.53 1.11 7.55 3.13A10.6 10.6 0 0 1 26.69 16c0 5.89-4.79 10.67-10.68 10.67z"/>
+    </svg>
+</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
