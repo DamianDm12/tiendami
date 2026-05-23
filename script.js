@@ -161,7 +161,7 @@ const productos = [
     { nombre: "Omnia Crystalline Bulgary", categoria: "Femenino", nombreImagen: "Omnia Crystalline Bulgary", extension: "webp" },
     { nombre: "One Shock Calvin Klein", categoria: "Femenino", nombreImagen: "One Shock Calvin Klein", extension: "webp" },
     { nombre: "Onyx Elixir María Cher", categoria: "Femenino", nombreImagen: "Onyx Elixir Maria Cher", extension: "webp" },
-    { nombre: "Opium Yves St. Laurent", categoria: "Femenino", nombreImagen: "Opium Yves St Laurent", extension: "webp" },
+    { nombre: "Opium Yves St. Laurent", categoria: "Femenino", nombreImagen: "Opium Yves St Lauren", extension: "webp" },
     { nombre: "Organza Givenchy", categoria: "Femenino", nombreImagen: "Organza Givenchy", extension: "webp" },
     { nombre: "Oscar De La Renta", categoria: "Femenino", nombreImagen: "Oscar De La Renta Oscar de la Renta", extension: "webp" },
     { nombre: "Oui La Vie Est Belle Lancome", categoria: "Femenino", nombreImagen: "Oui La Vie Est Belle Givenchy", extension: "webp" },
