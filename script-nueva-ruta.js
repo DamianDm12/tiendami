@@ -212,6 +212,33 @@ const productos = [
     { nombre: "Yellow Diamond Versace", categoria: "Femenino", nombreImagen: "Yellow Diamond Versace", extension: "webp" },
     { nombre: "Yes I Am Cacharel", categoria: "Femenino", nombreImagen: "Yes I Am Cacharel", extension: "webp" },
     { nombre: "You Armani", categoria: "Femenino", nombreImagen: "You Armani", extension: "webp" },
+    // --- SECCIÓN MASCULINOS ---
+    { nombre: "212 Glam Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Glam - Carolina Herrera", extension: "jpg" },
+    { nombre: "212 Heroes Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Heroes - Carolina Herrera", extension: "webp" },
+    { nombre: "212 New York Carolina Herrera", categoria: "Masculino", nombreImagen: "212 New York - Carolina Herrera", extension: "webp" },
+    { nombre: "212 On Ice Carolina Herrera", categoria: "Masculino", nombreImagen: "212 On Ice - Carolina Herrera", extension: "jfif" },
+    { nombre: "212 Sexy Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Sexymen - Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Carolina Herrera", categoria: "Masculino", nombreImagen: "212 VipMen - Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Black Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Vip Black Men- Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Black Extra Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Vip Black Extra Men- Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Black Red Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Vip Black Red Men- Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Wild Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Vip Wild Men- Carolina Herrera", extension: "webp" },
+    { nombre: "212 Vip Wins Carolina Herrera", categoria: "Masculino", nombreImagen: "212 Vip Wins Men- Carolina Herrera", extension: "webp" },
+    { nombre: "A Men Thierry Mugler", categoria: "Masculino", nombreImagen: "A Men - Thierry Mugler", extension: "webp" },
+    { nombre: "Acqua Di Gio Giorgio Armani", categoria: "Masculino", nombreImagen: "Acqua Di Gio Men- Giorgio Armani", extension: "webp" },
+    { nombre: "Acqua Di Gio Essenza Giorgio Armani", categoria: "Masculino", nombreImagen: "Acqua Di Gio Essenza Men- Giorgio Armani", extension: "webp" },
+    { nombre: "Acqua Di Gio Profondo Giorgio Armani", categoria: "Masculino", nombreImagen: "Acqua Di Gio Profondo Men- Giorgio Armani", extension: "webp" },
+    { nombre: "Acqua Di Gio Profumo Giorgio Armani", categoria: "Masculino", nombreImagen: "Acqua Di Gio Profumo Men- Giorgio Armani", extension: "jpg" },
+    { nombre: "Alien Thierry Mugler", categoria: "Masculino", nombreImagen: "Alien - Thierry Mugler Men", extension: "webp" },
+    { nombre: "Allure Sport Chanel", categoria: "Masculino", nombreImagen: "Allure Sport Chanel Men", extension: "webp" },
+    { nombre: "Angel Thierry Mugler", categoria: "Masculino", nombreImagen: "Angel - Thierry Mugler Men", extension: "webp" },
+    { nombre: "Aqva Marine Bulgary", categoria: "Masculino", nombreImagen: "Aqva Marine - Bulgary Men", extension: "webp" },
+    { nombre: "Armani Code Giorgio Armani", categoria: "Masculino", nombreImagen: "Armani Code Men - Giorgio Armani", extension: "webp" },
+    { nombre: "Armani Code Absolu Giorgio Armani", categoria: "Masculino", nombreImagen: "Armani Code Absolu Men- Giorgio Armani", extension: "jpg" },
+    { nombre: "Armani Code Profumo Giorgio Armani", categoria: "Masculino", nombreImagen: "Armani Code Profumo Men- Giorgio Armani", extension: "jpg" },
+    { nombre: "Attitude Armani", categoria: "Masculino", nombreImagen: "Attitude Armani Men", extension: "webp" },
+    { nombre: "Azzaro Azzaro", categoria: "Masculino", nombreImagen: "Azzaro - Azzaro Men", extension: "webp" },
+    { nombre: "Bad Boy Carolina Herrera", categoria: "Masculino", nombreImagen: "Bad Boy Men- Carolina Herrera", extension: "webp" }
 ];
 
 let carrito = [];
